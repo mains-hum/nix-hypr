@@ -4,7 +4,7 @@
 `My main configuration on hyprland NixOS`
 
 <p align="center">
-  <img src="https://img.shields.io/github/repo-size/mains-hum/nix-tokyonight?style=for-the-badge&logo=github&color=81a1c1&logoColor=white" alt="Repo Size" />
+  <img src="https://img.shields.io/github/repo-size/mains-hum/nix-hypr?style=for-the-badge&logo=github&color=81a1c1&logoColor=white" alt="Repo Size" />
   <img src="https://img.shields.io/badge/NixOS-Unstable-5277C3?style=for-the-badge&logo=nixos&logoColor=white" alt="NixOS" />
   <img src="https://img.shields.io/badge/WM-Hyprland-00ADD8?style=for-the-badge&logo=wayland&logoColor=white" alt="Hyprland" />
   <img src="https://img.shields.io/github/license/mains-hum/nix-tokyonight?style=for-the-badge&color=ebcb8b" alt="License" />
