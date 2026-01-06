@@ -42,7 +42,7 @@
 
 ---
 
-## :blowfish: Navigation
+## :crocodile: Navigation
 | Keybind | Action | Keybind | Action |
 | :--- | :--- | :--- | :--- |
 | `Caps Lock + E/Ret` | Alacritty | `Caps Lock + Q` | Kill |
@@ -111,7 +111,7 @@ monitor = DP-1, 1920x1080@165, 0x0, 1
 ---
 
 <div align="center">
-⭐ Star this repo if you find it helpful!
+ :blowfish: Star this repo if you find it helpful!
 Made with by mains-hum
 </div>
 
