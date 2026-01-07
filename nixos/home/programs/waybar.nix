@@ -6,7 +6,16 @@
   ...
 }:
 
+let
+  waybar_cava_script = pkgs.writeShellScript "waybar-cava" ''
+    export LANG=en_US.UTF-8
+    ${pkgs.cava}/bin/cava -p $HOME/.config/cava/config | \
+    sed -u 's/;//g;s/0/ /g;s/1/▂/g;s/2/▃/g;s/3/▄/g;s/4/▅/g;s/5/▆/g;s/6/▇/g;s/7/█/g;'
+  '';
+in
 {
+  home.packages = [ pkgs.cava ];
+
   programs.waybar = {
     enable = true;
 
@@ -16,15 +25,15 @@
         position = "top";
         height = 30;
         exclusive = true;
-        passthrough = false;
-        gtk-layer-shell = true;
 
         margin-top = 10;
         margin-left = 15;
         margin-right = 15;
-        spacing = 0;
 
-        modules-left = [ "hyprland/workspaces" ];
+        modules-left = [
+          "hyprland/workspaces"
+          "custom/cava"
+        ];
         modules-center = [ "hyprland/window" ];
         modules-right = [
           "pulseaudio"
@@ -33,6 +42,12 @@
           "clock"
           "tray"
         ];
+
+        "custom/cava" = {
+          exec = "${waybar_cava_script}";
+          format = "{}";
+          font = "JetBrainsMono Nerd Font";
+        };
 
         "hyprland/workspaces" = {
           format = "󰥱";
@@ -55,12 +70,11 @@
         "hyprland/window" = {
           format = "{}";
           max-length = 40;
-          separate-outputs = true;
         };
 
         "clock" = {
-          format = "{:%H:%M}";
-          tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
+          format = "{:%H:%M:%S}";
+          interval = 1;
         };
 
         "memory" = {
@@ -89,14 +103,12 @@
       @define-color blue      ${colors.palette.blue};
       @define-color green     ${colors.palette.green};
       @define-color yellow    ${colors.palette.yellow};
-      @define-color surface0  ${colors.palette.surface0};
 
       * {
         border: none;
         border-radius: 0;
         font-family: "JetBrainsMono Nerd Font", sans-serif;
         font-size: 13px;
-        min-height: 0;
         font-weight: bold;
       }
 
@@ -107,16 +119,18 @@
         color: @text;
       }
 
-      #workspaces {
-        margin: 0 4px;
+      #custom-cava {
+        color: @mauve;
+        font-size: 16px;
+        padding-left: 10px;
+        font-family: "JetBrainsMono Nerd Font"; 
       }
 
       #workspaces button {
         padding: 0 6px;
         color: @text;
         opacity: 0.4;
-        font-size: 10px;
-        transition: all 0.3s ease;
+        transition: all 0.2s ease;
       }
 
       #workspaces button.active {
@@ -125,45 +139,38 @@
         font-size: 14px;
       }
 
-      #workspaces button.urgent {
-        color: @yellow;
-        opacity: 1.0;
-      }
-
       #workspaces button:hover {
         color: @lavender;
         background: transparent;
-        opacity: 0.8;
       }
 
       #clock, #memory, #pulseaudio, #language, #tray, #window {
         padding: 0 12px;
-        background-color: transparent;
       }
 
-      #window { 
-        color: @lavender; 
-      }
-
-      #clock { 
-        color: @mauve; 
-      }
-
-      #language { 
-        color: @blue; 
-      }
-
-      #memory { 
-        color: @green; 
-      }
-
-      #pulseaudio { 
-        color: @yellow; 
-      }
-
-      #tray { 
-        margin-right: 8px; 
-      }
+      #window { color: @lavender; }
+      #clock { color: @mauve; }
+      #language { color: @blue; }
+      #memory { color: @green; }
+      #pulseaudio { color: @yellow; }
+      #tray { margin-right: 8px; }
     '';
   };
+
+  xdg.configFile."cava/config".text = ''
+    [general]
+    bars = 10
+    sleep_timer = 5
+    framerate = 60
+
+    [input]
+    method = pulse
+    source = auto
+
+    [output]
+    method = raw
+    raw_target = /dev/stdout
+    data_format = ascii
+    ascii_max_range = 7
+  '';
 }
