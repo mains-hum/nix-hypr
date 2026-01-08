@@ -53,6 +53,7 @@
     fish
     telegram-desktop
     steam
+    lsd
     mpv
     zapret
     pavucontrol
