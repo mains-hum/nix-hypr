@@ -12,7 +12,7 @@
     ./modules/audio.nix
     ./modules/fonts.nix
     ./modules/zapret.nix
-    ./home/programs/server.nix
+    #./home/programs/server.nix
   ];
 
   system.stateVersion = "26.05";
