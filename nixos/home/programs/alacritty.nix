@@ -42,7 +42,6 @@
         };
       };
 
-      # --- ЦВЕТА ИЗ ЕДИНОГО colors.nix ---
       colors = {
         primary = {
           background = colors.palette.bg;

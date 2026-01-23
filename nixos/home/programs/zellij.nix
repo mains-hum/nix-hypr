@@ -8,15 +8,23 @@
       theme = "ocean";
       show_startup_tips = false;
       default_layout = "compact";
-      pane_frames = false;
+      pane_frames = true;
       mouse_mode = true;
 
       session_serialization = true;
       serialize_pane_viewport = true;
       scrollback_lines_to_serialize = 10000;
 
+      ui = {
+        pane_frames = {
+          rounded_corners = true;
+        };
+      };
+
       plugins = {
-        resurrect = { location = "zellij:zellij-resurrect"; };
+        resurrect = {
+          location = "zellij:zellij-resurrect";
+        };
       };
 
       load_plugins = {
@@ -28,20 +36,48 @@
 
       keybinds = {
         "shared_except \"locked\"" = {
-          "bind \"Ctrl a\"" = { NewPane = "Down"; };
-          "bind \"Ctrl s\"" = { NewPane = "Right"; };
-          "bind \"Ctrl h\"" = { MoveFocus = "Left"; };
-          "bind \"Ctrl l\"" = { MoveFocus = "Right"; };
-          "bind \"Ctrl j\"" = { MoveFocus = "Down"; };
-          "bind \"Ctrl k\"" = { MoveFocus = "Up"; };
-          "bind \"Alt h\"" = { Resize = "Increase Left"; };
-          "bind \"Alt l\"" = { Resize = "Increase Right"; };
-          "bind \"Alt j\"" = { Resize = "Increase Down"; };
-          "bind \"Alt k\"" = { Resize = "Increase Up"; };
-          "bind \"Ctrl t\"" = { NewTab = [ ]; };
-          "bind \"Alt w\"" = { CloseTab = [ ]; };
-          "bind \"Alt n\"" = { GoToNextTab = [ ]; };
-          "bind \"Alt p\"" = { GoToPreviousTab = [ ]; };
+          "bind \"Ctrl a\"" = {
+            NewPane = "Down";
+          };
+          "bind \"Ctrl s\"" = {
+            NewPane = "Right";
+          };
+          "bind \"Ctrl h\"" = {
+            MoveFocus = "Left";
+          };
+          "bind \"Ctrl l\"" = {
+            MoveFocus = "Right";
+          };
+          "bind \"Ctrl j\"" = {
+            MoveFocus = "Down";
+          };
+          "bind \"Ctrl k\"" = {
+            MoveFocus = "Up";
+          };
+          "bind \"Alt h\"" = {
+            Resize = "Increase Left";
+          };
+          "bind \"Alt l\"" = {
+            Resize = "Increase Right";
+          };
+          "bind \"Alt j\"" = {
+            Resize = "Increase Down";
+          };
+          "bind \"Alt k\"" = {
+            Resize = "Increase Up";
+          };
+          "bind \"Ctrl t\"" = {
+            NewTab = [ ];
+          };
+          "bind \"Alt w\"" = {
+            CloseTab = [ ];
+          };
+          "bind \"Alt n\"" = {
+            GoToNextTab = [ ];
+          };
+          "bind \"Alt p\"" = {
+            GoToPreviousTab = [ ];
+          };
         };
       };
 
@@ -51,7 +87,7 @@
           bg = "${colors.palette.bg}";
           black = "${colors.palette.black}";
           red = "${colors.palette.red}";
-          green = "${colors.palette.green}";
+          green = "${colors.palette.blue}";
           yellow = "${colors.palette.yellow}";
           blue = "${colors.palette.blue}";
           magenta = "${colors.palette.magenta}";

@@ -42,7 +42,6 @@
     firefox
     bc
     waybar
-    rofi
     swww
     alacritty
     wpgtk
@@ -83,5 +82,9 @@
     fuzzel
     oxidized
     prismlauncher
+    discord
+    obsidian
+    kicad
+    tt
   ];
 }
