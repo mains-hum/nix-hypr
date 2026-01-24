@@ -82,7 +82,7 @@
     fuzzel
     oxidized
     prismlauncher
-    discord
+    #discord
     obsidian
     kicad
     tt

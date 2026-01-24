@@ -71,7 +71,7 @@
 # Clone this repository
 > mkdir Pictures
 > git clone https://github.com/mains-hum/nix-hypr.git
-> cd ~/nix-paradise/nixos
+> cd ~/nix-hypr/nixos
 
 # Copy configuration files
 > sudo rm -rf /etc/nixos/configuration.nix
