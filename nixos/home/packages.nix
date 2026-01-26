@@ -17,16 +17,16 @@
     nix-init
 
     #C/C++
-    pkg-config
-    gcc
-    gdb
-    clang-tools
-    cmake
-    gnumake
-    binutils
+    #pkg-config
+    #gcc
+    #gdb
+    #clang-tools
+    #cmake
+    #gnumake
+    #binutils
 
     #Pascal
-    fpc
+    #fpc
 
     #Python
     python3
@@ -40,7 +40,7 @@
 
     #program
     firefox
-    bc
+    #bc
     waybar
     swww
     alacritty
@@ -75,16 +75,16 @@
     bottom
     dust
     joshuto
-    qbittorrent
-    qtox
+    #qbittorrent
+    #qtox
     wine
     steam-run
     fuzzel
-    oxidized
-    prismlauncher
+    #oxidized
+    #prismlauncher
     #discord
-    obsidian
-    kicad
-    tt
+    #obsidian
+    #kicad
+    #tt
   ];
 }
