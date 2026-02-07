@@ -17,16 +17,16 @@
     nix-init
 
     #C/C++
-    #pkg-config
-    #gcc
-    #gdb
-    #clang-tools
-    #cmake
-    #gnumake
-    #binutils
+    pkg-config
+    gcc
+    gdb
+    clang-tools
+    cmake
+    gnumake
+    binutils
 
     #Pascal
-    #fpc
+    fpc
 
     #Python
     python3
@@ -40,26 +40,21 @@
 
     #program
     firefox
-    #bc
     waybar
     swww
-    alacritty
     wpgtk
     nwg-look
     gowall
     ffmpeg
-    kitty
     fish
     telegram-desktop
     steam
-    lsd
     mpv
     zapret
     pavucontrol
     playerctl
     cava
     fastfetch
-    btop
     grim
     slurp
     wl-clipboard
@@ -75,16 +70,34 @@
     bottom
     dust
     joshuto
-    #qbittorrent
-    #qtox
+    qbittorrent
+    qtox
     wine
     steam-run
     fuzzel
-    #oxidized
-    #prismlauncher
-    #discord
-    #obsidian
-    #kicad
-    #tt
+    oxidized
+    obsidian
+    kicad
+    prismlauncher
+    tt
+    blender
+    foot
+    noctalia-shell
+    inkscape
+    yt-dlp
+    vim
+    libreoffice-qt
+    hunspell
+    hunspellDicts.uk_UA
+    hunspellDicts.th_TH
+    gimp
+    discord
+    nemo
+    fuse
+    libunwind
+    libusb1
+    xorg.libX11
+    fuse2
+    fuse3
   ];
 }

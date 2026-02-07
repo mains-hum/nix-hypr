@@ -4,7 +4,7 @@
   programs.helix = {
     enable = true;
     settings = {
-      theme = "custom_monochrome";
+      theme = "kanagawa_custom";
       editor = {
         line-number = "relative";
         cursorline = true;
@@ -14,7 +14,7 @@
         bufferline = "multiple";
         rulers = [ ];
         cursor-shape = {
-          insert = "bar";
+          insert = "block";
           normal = "block";
         };
         indent-guides = {
@@ -70,26 +70,27 @@
     };
   };
 
-  xdg.configFile."helix/themes/custom_monochrome.toml".text = ''
+  xdg.configFile."helix/themes/kanagawa_custom.toml".text = ''
     inherits = "base16_transparent"
     "ui.background" = { }
-    "ui.linenr" = { fg = "${colors.palette.surface2}" }
-    "ui.linenr.selected" = { fg = "${colors.palette.surface2}" }
+    "ui.linenr" = { fg = "${colors.palette.overlay0}" }
+    "ui.linenr.selected" = { fg = "${colors.palette.bright_white}", modifiers = ["bold"] }
     "ui.statusline" = { fg = "${colors.palette.fg}", bg = "${colors.palette.surface0}" }
     "ui.virtual.indent-guide" = { fg = "${colors.palette.surface1}" }
-    "ui.cursor.match" = { fg = "${colors.palette.white}", modifiers = ["bold", "underline"] }
-    "ui.bufferline.active" = { fg = "${colors.palette.bg}", bg = "${colors.palette.fg}", modifiers = ["bold"] }
-    "ui.statusline.inactive" = { fg = "${colors.palette.overlay0}", bg = "${colors.palette.bg}" }
+    "ui.cursor.match" = { fg = "${colors.palette.yellow}", modifiers = ["bold", "underline"] }
+    "ui.bufferline.active" = { fg = "${colors.palette.bg}", bg = "${colors.palette.cyan}", modifiers = ["bold"] }
+    "ui.statusline.inactive" = { fg = "${colors.palette.overlay0}", bg = "${colors.palette.bg_dark}" }
     "ui.help" = { bg = "${colors.palette.surface0}", fg = "${colors.palette.fg}" }
     "ui.menu" = { bg = "${colors.palette.surface0}", fg = "${colors.palette.fg}" }
-    "ui.menu.selected" = { bg = "${colors.palette.fg}", fg = "${colors.palette.bg}" }
-    "ui.selection" = { bg = "${colors.palette.surface2}" }
+    "ui.menu.selected" = { bg = "${colors.palette.surface2}", fg = "${colors.palette.fg}" }
+    "ui.selection" = { bg = "${colors.palette.surface1}" }
     "variable" = "${colors.palette.fg}"
     "constant" = "${colors.palette.orange}"
     "keyword" = "${colors.palette.magenta}"
     "string" = "${colors.palette.green}"
     "function" = "${colors.palette.blue}"
-    "type" = "${colors.palette.yellow}"
-    "ui.cursor" = { fg = "${colors.palette.bg}", bg = "${colors.palette.white}" }
+    "type" = "${colors.palette.cyan}"
+    "comment" = "${colors.palette.overlay0}"
+    "ui.cursor" = { fg = "${colors.palette.bg}", bg = "${colors.palette.fg}" }
   '';
 }

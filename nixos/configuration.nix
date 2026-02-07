@@ -12,8 +12,8 @@
     ./modules/audio.nix
     ./modules/fonts.nix
     ./modules/zapret.nix
-    #./home/programs/server.nix
   ];
+
   system.stateVersion = "26.05";
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -58,6 +58,8 @@
   services.displayManager.autoLogin.user = "nixos";
   systemd.services."getty@tty1".enable = false;
   systemd.services."autovt@tty1".enable = false;
+
+  boot.supportedFilesystems = [ "fuse" ];
 
   virtualisation.spiceUSBRedirection.enable = true;
 

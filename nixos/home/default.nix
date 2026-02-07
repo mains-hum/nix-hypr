@@ -13,11 +13,10 @@ in
 
   imports = [
     ./programs/waybar.nix
-    ./programs/kitty.nix
-    ./programs/alacritty.nix
     ./programs/zellij.nix
     ./programs/nushell.nix
     ./packages.nix
+    ./programs/foot.nix
     ./img.nix
     ./programs/helix.nix
     ./programs/fuzzel.nix
@@ -26,6 +25,7 @@ in
     ./programs/cava.nix
     ./programs/theme.nix
     ./programs/fastfetch.nix
+    ./programs/noctalia.nix
     ./programs/hyprland.nix
     ./programs/firefox.nix
   ];

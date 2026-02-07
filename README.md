@@ -15,11 +15,7 @@
 
 ## :elephant: Screenshot
 <p align="center">
-  <img src="screenshot/1.png" width="48%" />
-  <img src="screenshot/2.png" width="48%" />
-  <br />
-  <img src="screenshot/3.png" width="48%" />
-  <img src="screenshot/4.png" width="48%" />
+  <img src="screenshot/1.png" />
 </p>
 
 ---
@@ -30,7 +26,7 @@
 | :--- | :--- |
 | **WM** | `Hyprland` |
 | **Shell** | `Zellij -> NuShell` |
-| **Terminal** | `Alacritty` |
+| **Terminal** | `Foot` |
 | **IDE** | `Helix` |
 | **Bar** | `Waybar` |
 | **Launcher** | `Fuzzel` |
@@ -45,7 +41,7 @@
 ## :crocodile: Navigation
 | Keybind | Action | Keybind | Action |
 | :--- | :--- | :--- | :--- |
-| `Caps Lock + E/Ret` | Alacritty | `Caps Lock + Q` | Kill |
+| `Caps Lock + E/Ret` | Foot | `Caps Lock + Q` | Kill |
 | `Caps Lock + R` | Fuzzel | `Caps Lock + F` | Fullscreen |
 | `Super + Alt + Shift + Q` | PowerOff | `Caps Lock + W` | Firefox |
 | `Caps Lock + Space` | Layout | `Alt + Shift + S` | Screenshot |

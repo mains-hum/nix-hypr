@@ -143,7 +143,7 @@
       window#waybar {
         background-color: @base;
         opacity: 0.95; 
-        border-radius: 5px;
+        border-radius: 0px;
         color: @text;
       }
 

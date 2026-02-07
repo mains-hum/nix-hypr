@@ -4,36 +4,19 @@
   programs.zellij = {
     enable = true;
     settings = {
-      default_shell = "${pkgs.nushell}/bin/nu";
+      default_shell = "${pkgs.nushell}/bin/nu"; # Твой Nushell [cite: 2026-01-11]
       theme = "ocean";
       show_startup_tips = false;
       default_layout = "compact";
-      pane_frames = true;
+
+      # Твои тонкие линии (без рамок)
+      pane_frames = false;
+      simplified_ui = true;
+
       mouse_mode = true;
-
       session_serialization = true;
-      serialize_pane_viewport = true;
-      scrollback_lines_to_serialize = 10000;
 
-      ui = {
-        pane_frames = {
-          rounded_corners = true;
-        };
-      };
-
-      plugins = {
-        resurrect = {
-          location = "zellij:zellij-resurrect";
-        };
-      };
-
-      load_plugins = {
-        resurrect = {
-          on_startup = true;
-          interval = 30;
-        };
-      };
-
+      # Возвращаем твои кастомные бинды [cite: 2026-01-11]
       keybinds = {
         "shared_except \"locked\"" = {
           "bind \"Ctrl a\"" = {

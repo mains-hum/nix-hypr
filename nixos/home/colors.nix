@@ -1,36 +1,36 @@
 {
   palette = {
-    bg = "#010103";
-    bg_dark = "#010103";
-    black = "#000000";
+    bg = "#181616";
+    bg_dark = "#0d0c0c";
+    black = "#0d0c0c";
 
-    fg = "#b0b0b0";
-    white = "#e0e0e0";
-    bright_white = "#ffffff";
+    fg = "#c5c9c5";
+    white = "#a6a69c";
+    bright_white = "#c5c9c5";
 
-    surface0 = "#08080a";
-    surface1 = "#121214";
-    surface2 = "#1c1c1f";
-    overlay0 = "#2a2a2d";
-    overlay1 = "#3e3e42";
+    surface0 = "#1d1c19";
+    surface1 = "#282727";
+    surface2 = "#2d4f67";
+    overlay0 = "#a6a69c";
+    overlay1 = "#7fb4ca";
 
-    red = "#f07178";
-    green = "#c3e88d";
-    yellow = "#ffcb6b";
-    blue = "#82a1ff";
-    magenta = "#c792ea";
-    cyan = "#89ddff";
-    orange = "#d08770";
+    red = "#c4746e";
+    green = "#8a9a7b";
+    yellow = "#c4b28a";
+    blue = "#8ba4b0";
+    magenta = "#a292a3";
+    cyan = "#8ea4a2";
+    orange = "#e46876";
 
-    bright_black = "#262629";
+    bright_black = "#a6a69c";
 
-    bright_red = "#f07178";
-    bright_green = "#c3e88d";
-    bright_yellow = "#ffcb6b";
-    bright_blue = "#82a1ff";
-    bright_magenta = "#c792ea";
-    bright_cyan = "#89ddff";
-    rosewater = "#f4dbd6";
-    lavender = "#b7bdf8";
+    bright_red = "#e46876";
+    bright_green = "#8a9a7b";
+    bright_yellow = "#c4b28a";
+    bright_blue = "#7fb4ca";
+    bright_magenta = "#938aa9";
+    bright_cyan = "#7aa89f";
+    rosewater = "#e46876";
+    lavender = "#938aa9";
   };
 }

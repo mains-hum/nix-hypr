@@ -3,6 +3,8 @@
 {
   programs.nushell = {
     enable = true;
+    extraConfig = "";
+
     configFile.text = ''
       $env.config = {
         show_banner: false
@@ -14,7 +16,8 @@
       }
 
       $env.PROMPT_COMMAND = { || 
-        let path = ($env.PWD | str replace $env.HOME "~")
+        let dir = ($env.PWD | str replace $env.HOME "~")
+        $"[($dir)] "
       }
       $env.PROMPT_COMMAND_RIGHT = { || "" }
 
@@ -52,8 +55,5 @@
     '';
   };
 
-  programs.starship = {
-    enable = true;
-    enableNushellIntegration = false;
-  };
+  programs.starship.enable = false;
 }
