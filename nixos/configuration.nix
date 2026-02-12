@@ -12,6 +12,7 @@
     ./modules/audio.nix
     ./modules/fonts.nix
     ./modules/zapret.nix
+    ./modules/v2raya.nix
   ];
 
   system.stateVersion = "26.05";
@@ -63,17 +64,6 @@
 
   virtualisation.spiceUSBRedirection.enable = true;
 
-  security.sudo.extraRules = [
-    {
-      users = [ "nixos" ];
-      commands = [
-        {
-          command = "/run/current-system/sw/bin/bash /home/nixos/zapret-discord-youtube-linux/main_script.sh";
-          options = [ "NOPASSWD" ];
-        }
-      ];
-    }
-  ];
   services.flatpak.enable = true;
   services.gvfs.enable = true;
   services.udisks2.enable = true;
@@ -81,15 +71,6 @@
     XCURSOR_THEME = "phinger-cursors-dark";
     XCURSOR_SIZE = "24";
   };
-  environment.systemPackages = with pkgs; [
-    git
-    wget
-    curl
-    unzip
-    zip
-    phinger-cursors
-    qemu_kvm
-    virt-viewer
-  ];
+
   security.sudo.enable = true;
 }

@@ -99,5 +99,8 @@
     xorg.libX11
     fuse2
     fuse3
+    openrgb
+    v2raya
+    v2ray
   ];
 }

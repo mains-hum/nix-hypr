@@ -6,7 +6,7 @@
       "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
       logo = {
         type = "builtin";
-        source = "nixos";
+        source = "GhostFreak";
         width = 20;
         height = 8;
         padding = {
@@ -44,7 +44,7 @@
         }
         {
           type = "custom";
-          format = "{#30}──────────────";
+          format = "";
         }
         {
           key = " {#31}󱄅 os  ";
