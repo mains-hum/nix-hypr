@@ -50,7 +50,7 @@
 | `Caps Lock + R` | Fuzzel | `Caps Lock + F` | Fullscreen |
 | `Super + Alt + Shift + Q` | PowerOff | `Caps Lock + W` | LibreWolf |
 | `Caps Lock + Space` | Layout | `Alt + Shift + S` | Screenshot |
-| `Caps Lock + D` | Telegram | `Caps Lock + A` | Steam |
+| `Caps Lock + D` | Kotatogram | `Caps Lock + A` | Steam |
 
 ---
 
