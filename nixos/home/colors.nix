@@ -1,18 +1,21 @@
 {
   palette = {
-    bg = "#181616";
-    bg_dark = "#0d0c0c";
-    black = "#0d0c0c";
+    bg = "#0a0a0a";
+    bg_dark = "#050505";
+    black = "#0a0a0a";
+
+    surface0 = "#121212";
+    surface1 = "#1a1a1a";
+    surface2 = "#242424";
+
+    overlay0 = "#727169";
+    overlay1 = "#8a8980";
+
+    bright_black = "#545454";
 
     fg = "#c5c9c5";
     white = "#a6a69c";
     bright_white = "#c5c9c5";
-
-    surface0 = "#1d1c19";
-    surface1 = "#282727";
-    surface2 = "#2d4f67";
-    overlay0 = "#a6a69c";
-    overlay1 = "#7fb4ca";
 
     red = "#c4746e";
     green = "#8a9a7b";
@@ -21,8 +24,6 @@
     magenta = "#a292a3";
     cyan = "#8ea4a2";
     orange = "#e46876";
-
-    bright_black = "#a6a69c";
 
     bright_red = "#e46876";
     bright_green = "#8a9a7b";

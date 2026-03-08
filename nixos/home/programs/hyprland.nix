@@ -26,24 +26,22 @@ in
       "$lavender" = "rgb(${cleanHex colors.palette.lavender})";
 
       "$mainMod" = "MOD3";
-      "$screenshot" = "grim -g \"$(slurp)\" ~/Pictures/screenshot.png";
-      "$browser" = "firefox";
+      "$screenshot" = "grim -g \"$(slurp)\" ~/Screenshots/screenshot.png";
+      "$browser" = "librewolf";
       "$launcher" = "fuzzel";
       "$swww" = "swww-daemon";
-      "$autoswww" = "swww img ~/Wallpaper/5.* --transition-type none";
+      "$autoswww" = "swww img ~/Wallpaper/2.* --transition-type none";
       "$volum" = "wpctl set-volume @DEFAULT_AUDIO_SINK@";
       "$mute" = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
 
       monitor = [
-        "DP-2, 1920x1080@60, -1920x540, 1"
-        "HDMI-A-1, 1920x1080@99, -1920x-540, 1"
         "DP-1, 1920x1080@165, 0x0, 1"
+        "HDMI-A-1, 1920x1080@99, 1920x-800, 1, transform, 3"
       ];
 
       workspace = [
-        "1, monitor:DP-2, default:true"
-        "2, monitor:HDMI-A-1, default:true"
-        "3, monitor:DP-1, default:true"
+        "1, monitor:DP-1, default:true"
+        "4, monitor:HDMI-A-1, default:true"
       ];
 
       env = [
@@ -52,7 +50,7 @@ in
       ];
 
       cursor = {
-        inactive_timeout = 2;
+        inactive_timeout = 1;
       };
 
       "exec-once" = [
@@ -65,32 +63,46 @@ in
       general = {
         gaps_in = 5;
         gaps_out = 10;
-        border_size = 2;
-        "col.active_border" = "rgba(${cleanHex colors.palette.cyan}ee)";
+        border_size = 3;
+        "col.active_border" = "rgba(8ba4b0aa)";
+        "col.inactive_border" = "rgba(0f0f0faa)";
       };
 
       decoration = {
         rounding = 0;
         active_opacity = 0.95;
-        inactive_opacity = 0.90;
+        inactive_opacity = 0.95;
         fullscreen_opacity = 1.0;
 
         shadow = {
-          enabled = false;
+          enabled = true;
         };
 
         blur = {
           enabled = true;
-          size = 8;
-          passes = 3;
+          size = 4;
+          passes = 2;
           new_optimizations = true;
           ignore_opacity = true;
-          noise = 0.02;
+          noise = 0.05;
         };
       };
 
       animations = {
-        enabled = false;
+        enabled = true;
+        bezier = [
+          "main, 0.15, 1, 0.3, 1"
+          "fast, 0.1, 1, 0.1, 1"
+          "overshot, 0.05, 0.9, 0.1, 1.05"
+        ];
+        animation = [
+          "windows, 1, 3, overshot, slide"
+          "windowsOut, 1, 3, fast, slide"
+          "windowsMove, 1, 3, main"
+          "fade, 1, 3, main"
+          "workspaces, 1, 3.5, overshot, slide"
+          "specialWorkspace, 1, 3, main, slidevert"
+        ];
       };
 
       input = {
@@ -109,6 +121,8 @@ in
         "$mainMod, RETURN, exec, foot"
         "$mainMod, R, exec, $launcher"
         "$mainMod, W, exec, $browser"
+        "$mainMod, k, exec, export http_proxy=http://127.0.0.1:1081; export https_proxy=http://127.0.0.1:1081; discord"
+
         "$mainMod, D, exec, Telegram"
         "ALT SHIFT, S, exec, $screenshot"
         "$mainMod, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"

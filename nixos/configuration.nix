@@ -12,7 +12,7 @@
     ./modules/audio.nix
     ./modules/fonts.nix
     ./modules/zapret.nix
-    ./modules/v2raya.nix
+    ./modules/xray.nix
   ];
 
   system.stateVersion = "26.05";

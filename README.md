@@ -13,10 +13,15 @@
 ---
 </div>
 
-## :elephant: Screenshot
+## :elephant: Screenshots
 <p align="center">
-  <img src="screenshot/1.png" />
+  <img src="screenshot/1.png" width="48%" />
+  <img src="screenshot/2.png" width="48%" />
+  <br />
+  <img src="screenshot/3.png" width="48%" />
+  <img src="screenshot/4.png" width="48%" />
 </p>
+
 
 ---
 
@@ -25,13 +30,13 @@
 | Component | Software |
 | :--- | :--- |
 | **WM** | `Hyprland` |
-| **Shell** | `Zellij -> NuShell` |
+| **Shell** | `NuShell` |
 | **Terminal** | `Foot` |
 | **IDE** | `Helix` |
 | **Bar** | `Waybar` |
 | **Launcher** | `Fuzzel` |
-| **File Manager** | `Joshuto` |
-| **Browser** | `FireFox` |
+| **File Manager** | `Yazi` |
+| **Browser** | `LibreWolf` |
 | **MP3 Player** |`Synapse`|
 | **Wallpaper** |`swww`|
 | **Wallpaper Convertor** |`gowall`|
@@ -43,7 +48,7 @@
 | :--- | :--- | :--- | :--- |
 | `Caps Lock + E/Ret` | Foot | `Caps Lock + Q` | Kill |
 | `Caps Lock + R` | Fuzzel | `Caps Lock + F` | Fullscreen |
-| `Super + Alt + Shift + Q` | PowerOff | `Caps Lock + W` | Firefox |
+| `Super + Alt + Shift + Q` | PowerOff | `Caps Lock + W` | LibreWolf |
 | `Caps Lock + Space` | Layout | `Alt + Shift + S` | Screenshot |
 | `Caps Lock + D` | Telegram | `Caps Lock + A` | Steam |
 

@@ -17,7 +17,7 @@ in
     settings = {
       main = {
         shell = "${pkgs.nushell}/bin/nu";
-        font = "JetBrainsMono Nerd Font:style=Bold:size=10";
+        font = "JetBrainsMono Nerd Font:style=Bold:size=13";
         pad = "0x0";
       };
 

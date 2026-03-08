@@ -18,6 +18,7 @@ in
     ./packages.nix
     ./programs/foot.nix
     ./img.nix
+    ./programs/foliate.nix
     ./programs/helix.nix
     ./programs/fuzzel.nix
     ./programs/gowall.nix
@@ -25,9 +26,9 @@ in
     ./programs/cava.nix
     ./programs/theme.nix
     ./programs/fastfetch.nix
-    ./programs/noctalia.nix
     ./programs/hyprland.nix
-    ./programs/firefox.nix
+    # ./programs/firefox.nix
+    ./programs/librewolf.nix
   ];
 
   home.enableNixpkgsReleaseCheck = false;

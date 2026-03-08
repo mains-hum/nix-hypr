@@ -21,13 +21,13 @@
       }
       $env.PROMPT_COMMAND_RIGHT = { || "" }
 
-      def ze [] {
-        zellij attach -c last
-      }
+      # def ze [] {
+        # zellij attach -c last
+      # }
 
-      if "ZELLIJ" not-in ($env | columns) {
-          ze
-      }
+      # if "ZELLIJ" not-in ($env | columns) {
+          # ze
+      # }
 
       alias la = ls -a
       alias .. = cd ..
@@ -47,6 +47,7 @@
       alias cr = cargo run
       alias grep = grep --color=auto
       alias sh = sudo -E hx
+      alias re = reboot
       alias h = hx
       alias j = joshuto
       alias s = synapce

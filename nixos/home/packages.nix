@@ -39,68 +39,36 @@
     python3Packages.black
 
     #program
-    firefox
+    librewolf
     waybar
     swww
     wpgtk
-    nwg-look
-    gowall
     ffmpeg
     fish
     telegram-desktop
     steam
     mpv
     zapret
-    pavucontrol
-    playerctl
     cava
     fastfetch
     grim
     slurp
     wl-clipboard
-    cliphist
     helix
     dconf
     gsettings-desktop-schemas
-    zellij
+    # zellij
     nushell
     wtype
-    bat
-    ripgrep
-    bottom
     dust
-    joshuto
     qbittorrent
-    qtox
     wine
     steam-run
     fuzzel
-    oxidized
     obsidian
-    kicad
-    prismlauncher
-    tt
-    blender
     foot
-    noctalia-shell
-    inkscape
-    yt-dlp
-    vim
-    libreoffice-qt
-    hunspell
-    hunspellDicts.uk_UA
-    hunspellDicts.th_TH
-    gimp
+    yazi
+    foliate
     discord
-    nemo
-    fuse
-    libunwind
-    libusb1
-    xorg.libX11
-    fuse2
-    fuse3
-    openrgb
-    v2raya
-    v2ray
   ];
 }

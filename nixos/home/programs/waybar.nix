@@ -37,7 +37,7 @@
         ];
 
         "hyprland/workspaces" = {
-          format = "󰥱";
+          format = "[{name}]";
           on-click = "activate";
           all-outputs = true;
           persistent-workspaces = {
@@ -58,7 +58,7 @@
         };
 
         "clock" = {
-          format = "{:%H:%M:%S | %d.%m.%y | %A}";
+          format = "{:%H:%M:%S ¦ %d.%m.%y ¦ %A}";
           interval = 1;
         };
 
@@ -142,7 +142,7 @@
 
       window#waybar {
         background-color: @base;
-        opacity: 0.95; 
+        opacity: 1; 
         border-radius: 0px;
         color: @text;
       }

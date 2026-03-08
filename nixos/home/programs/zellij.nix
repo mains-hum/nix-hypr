@@ -4,19 +4,17 @@
   programs.zellij = {
     enable = true;
     settings = {
-      default_shell = "${pkgs.nushell}/bin/nu"; # Твой Nushell [cite: 2026-01-11]
+      default_shell = "${pkgs.nushell}/bin/nu";
       theme = "ocean";
       show_startup_tips = false;
       default_layout = "compact";
 
-      # Твои тонкие линии (без рамок)
       pane_frames = false;
       simplified_ui = true;
 
       mouse_mode = true;
       session_serialization = true;
 
-      # Возвращаем твои кастомные бинды [cite: 2026-01-11]
       keybinds = {
         "shared_except \"locked\"" = {
           "bind \"Ctrl a\"" = {
