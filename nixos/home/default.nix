@@ -27,8 +27,9 @@ in
     ./programs/theme.nix
     ./programs/fastfetch.nix
     ./programs/hyprland.nix
-    # ./programs/firefox.nix
+    ./programs/zellij.nix
     ./programs/librewolf.nix
+    ./programs/fish.nix
   ];
 
   home.enableNixpkgsReleaseCheck = false;

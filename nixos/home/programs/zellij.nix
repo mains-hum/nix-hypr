@@ -7,13 +7,17 @@
       default_shell = "${pkgs.nushell}/bin/nu";
       theme = "ocean";
       show_startup_tips = false;
-      default_layout = "compact";
-
       pane_frames = false;
       simplified_ui = true;
-
       mouse_mode = true;
       session_serialization = true;
+      copy_on_select = true;
+
+      ui = {
+        pane_frames = {
+          hide_session_name = true;
+        };
+      };
 
       keybinds = {
         "shared_except \"locked\"" = {
@@ -79,4 +83,15 @@
       };
     };
   };
+
+  xdg.configFile."zellij/layouts/default.kdl".text = ''
+    layout {
+        default_tab_template {
+            children
+        }
+        tab {
+            pane
+        }
+    }
+  '';
 }

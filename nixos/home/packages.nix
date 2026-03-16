@@ -25,27 +25,24 @@
     gnumake
     binutils
 
-    #Pascal
-    fpc
-
     #Python
     python3
     python3Packages.yt-dlp
     python3Packages.python-vlc
-    vlc
     python3
     ruff
     python3Packages.python-lsp-server
     python3Packages.black
 
     #program
+    doas
     librewolf
     waybar
     swww
     wpgtk
     ffmpeg
     fish
-    telegram-desktop
+    kotatogram-desktop
     steam
     mpv
     zapret
@@ -57,7 +54,7 @@
     helix
     dconf
     gsettings-desktop-schemas
-    # zellij
+    zellij
     nushell
     wtype
     dust
@@ -70,5 +67,7 @@
     yazi
     foliate
     discord
+    nemo
+    android-tools
   ];
 }

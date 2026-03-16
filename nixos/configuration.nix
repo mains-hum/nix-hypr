@@ -13,6 +13,7 @@
     ./modules/fonts.nix
     ./modules/zapret.nix
     ./modules/xray.nix
+    ./modules/doas.nix
   ];
 
   system.stateVersion = "26.05";
@@ -63,6 +64,7 @@
   boot.supportedFilesystems = [ "fuse" ];
 
   virtualisation.spiceUSBRedirection.enable = true;
+  virtualisation.waydroid.enable = true;
 
   services.flatpak.enable = true;
   services.gvfs.enable = true;

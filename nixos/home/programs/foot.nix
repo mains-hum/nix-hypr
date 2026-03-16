@@ -16,7 +16,7 @@ in
 
     settings = {
       main = {
-        shell = "${pkgs.nushell}/bin/nu";
+        shell = "${pkgs.fish}/bin/fish";
         font = "JetBrainsMono Nerd Font:style=Bold:size=13";
         pad = "0x0";
       };

@@ -35,13 +35,15 @@ in
       "$mute" = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
 
       monitor = [
-        "DP-1, 1920x1080@165, 0x0, 1"
-        "HDMI-A-1, 1920x1080@99, 1920x-800, 1, transform, 3"
+        "DP-1, 1920x1080@165, 0x0, 1, transform, 2"
+        "HDMI-A-1, 1920x1080@99, 0x-1080, 1"
+        "DP-3, 1920x1080@60, 1920x0, 1"
       ];
 
       workspace = [
         "1, monitor:DP-1, default:true"
-        "4, monitor:HDMI-A-1, default:true"
+        "2, monitor:HDMI-A-1, default:true"
+        "3, monitor:DP-3, default:true"
       ];
 
       env = [
@@ -123,7 +125,7 @@ in
         "$mainMod, W, exec, $browser"
         "$mainMod, k, exec, export http_proxy=http://127.0.0.1:1081; export https_proxy=http://127.0.0.1:1081; discord"
 
-        "$mainMod, D, exec, Telegram"
+        "$mainMod, D, exec, kotatogram-desktop"
         "ALT SHIFT, S, exec, $screenshot"
         "$mainMod, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
 

@@ -31,11 +31,10 @@
             vnext = [
               {
                 address = "144.31.166.105";
-                port = 58749;
+                port = 51736;
                 users = [
                   {
-                    id = "010c46ba-0029-4df6-8907-85bcdd875f35";
-                    flow = "xtls-rprx-vision";
+                    id = "00178127-ca7e-4fe8-8aab-ee4765c365fb";
                     encryption = "none";
                   }
                 ];
@@ -46,11 +45,11 @@
             network = "tcp";
             security = "reality";
             realitySettings = {
-              serverName = "www.icloud.com";
+              serverName = "www.amd.com";
               fingerprint = "chrome";
               show = false;
-              publicKey = "nm9IsmymzM2tVhWgrStOBUAXVGNQCkaJjFZ48FrneRQ";
-              shortId = "406d122ca9";
+              publicKey = "0p6BO2BNxbsSKe0PvIFYC0t5fkst0bU3e-M3LDj2m1I";
+              shortId = "1fbf4842b0";
               spiderX = "/";
             };
           };
