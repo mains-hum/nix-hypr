@@ -65,8 +65,6 @@
     obsidian
     foot
     yazi
-    foliate
-    discord
     nemo
     android-tools
   ];
